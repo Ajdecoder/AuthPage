@@ -1,15 +1,13 @@
 import { useState } from "react";
 import "./auth.css";
 import axios from "axios";
-import {
-  COHIRE_DOMAIN_IP,
-} from "./commons";
+import { COHIRE_DOMAIN_IP } from "./commons";
 
 function Auth() {
   const [signupData, setSignupData] = useState({
     email: "",
     password: "",
-    type: "Organization", // Ensure default is set
+    type: "Organization",
     gst: "",
     organization_location: "",
   });
@@ -19,7 +17,6 @@ function Auth() {
     password: "",
   });
 
-  // Handle changes in signup form
   const handleSignupChange = (e) => {
     const { name, value } = e.target;
     setSignupData((prev) => ({
@@ -28,7 +25,6 @@ function Auth() {
     }));
   };
 
-  // Handle changes in login form
   const handleLoginChange = (e) => {
     const { name, value } = e.target;
     setLoginData((prev) => ({
@@ -37,7 +33,6 @@ function Auth() {
     }));
   };
 
-  // Handle signup submit
   const handleSignupSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -51,13 +46,11 @@ function Auth() {
         }
       );
       console.log("Signup Response:", response);
-      // Store the response data if needed
     } catch (error) {
       console.error("Error during signup:", error);
     }
   };
 
-  // Handle login submit
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -66,13 +59,11 @@ function Auth() {
         loginData,
         {
           headers: {
-            "Content-Type": "application/json", // Ensure content type
-            // Authorization: `Bearer ${token}`
+            "Content-Type": "application/json",
           },
         }
       );
       console.log("Login Response:", response);
-      // Store the response data if needed
     } catch (error) {
       console.error("Error during login:", error);
     }
@@ -120,8 +111,8 @@ function Auth() {
             />
             <select
               name="type"
-              value={signupData.type} // Bind the select value
-              onChange={handleSignupChange} // Handle changes
+              value={signupData.type}
+              onChange={handleSignupChange}
               className="typeSelection"
             >
               <option value="organization">Organization</option>
