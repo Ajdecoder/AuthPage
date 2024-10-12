@@ -2,29 +2,6 @@
 export const Home = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center">
-      {/* Navbar */}
-      <nav className="w-full bg-white shadow">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold">CoHire AI</div>
-          <ul className="flex space-x-6">
-            <li>
-              <a href="#features" className="hover:text-blue-600">
-                Features
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-blue-600">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-blue-600">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="flex flex-col-reverse md:flex-row items-center container mx-auto px-4 py-12 md:py-24">
