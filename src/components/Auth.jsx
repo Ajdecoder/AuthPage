@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./auth.css";
 import axios from "axios";
-import { COHIRE_DOMAIN_IP } from "./commons";
+import { COHIRE_DOMAIN_IP } from "../commons";
 
 function Auth() {
   const [signupData, setSignupData] = useState({
