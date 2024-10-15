@@ -9,12 +9,12 @@ body {
 .authform {
   display: flex !important;
   justify-content: center !important;
-  margin-top: 5rem !important;
+  margin-top: 3rem !important;
 }
 
 .main {
-  width: 350px !important;
-  height: 500px !important;
+  width: 448px !important;
+  height: 538px !important;
   background: red !important;
   overflow: hidden !important;
   background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38")
@@ -48,7 +48,7 @@ input {
   height: 10px !important;
   background: #e0dede !important;
   justify-content: center !important;
-  display: flex !important;
+  /* display: flex !important; */
   margin: 20px auto !important;
   padding: 12px !important;
   border: none !important;
@@ -108,7 +108,7 @@ button:hover {
 }
 
 .typeSelection {
-  display: flex !important;
+  /* display: flex !important; */
   align-items: center !important;
   margin: auto !important;
   padding: 0.41rem !important;
